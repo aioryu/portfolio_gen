@@ -1,90 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Projeto Portfólio" />
-		<meta name="author" content="Generation Brasil" />
-		<meta name="keywords" content="HTML, CSS, JavaScript" />
-		<link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
-		<link rel="stylesheet" href="assets/css/style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Portfólio" />
+  <meta name="author" content="Generation Brasil" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="contato.css"> <!-- estilos só do contato -->
+  
 
-		<title>Contato</title>
-	</head>
+  <title>Contato</title>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Generation Brasil</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-	<body>
-		<!-- Cabeçalho da Página (header) -->
-		<header>
-			<!-- Título do cabeçalho -->
-			<h1>Generation Brasil</h1>
+  <!-- Conteúdo principal -->
+  <main>
+    <form id="formulario">
+      <label for="name"> Nome: </label>
+      <input id="name" type="text" name="name" placeholder="Digite seu nome" />
+      <span id="errNome" class="erro"></span>
 
-			<!-- Menu de Navegação -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</header>
+      <label for="email">Email: </label>
+      <input id="email" type="text" name="email" placeholder="Digite seu email" />
+      <span id="errEmail" class="erro"></span>
 
-		<!-- Seção Principal da Página (main) -->
-		<main>
-			<!-- Seção Principal da Página (main) -->
-			<main>
-				<!-- Seção do Formulário -->
-				<form action="#" method="submit" id="formulario">
-					<label for="nome"> Nome: </label>
-					<input id="name" type="text" name="name" placeholder="Digite seu nome" />
-					<span id="errNome"></span>
+      <label for="subject">Assunto: </label>
+      <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem" />
+      <span id="errSubject" class="erro"></span>
 
-					<label for="email">Email: </label>
-					<input id="email" type="text" name="email" placeholder="Digite seu email" />
-					<span id="errEmail"></span>
+      <label for="message">Mensagem: </label>
+      <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
 
-					<label for="subject">Assunto: </label>
-					<input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem" />
-					<span id="errSubject"></span>
+      <button type="submit">Enviar</button>
+    </form>
 
-					<label for="message">Mensagem: </label>
-					<textarea id="message" namme="message" placeholder="Digite sua mensagem"></textarea>
+    <!-- Google Maps -->
+    <article>
+      <address>
+        <p>Av. Professor Francisco Morato, 4229 - Vila Sonia,</p>
+        <p>São Paulo - SP, 05520-100</p>
+      </address>
+      <iframe
+        src="https://www.google.com/maps?q=Av.+Professor+Francisco+Morato,+4229+-+Vila+S%C3%B4nia,+S%C3%A3o+Paulo+-+SP&hl=pt-BR&z=16&output=embed"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </article>
+  </main>
 
-					<button type="submit">Enviar</button>
-				</form>
+  <!-- Rodapé -->
+  <footer>
+    <section>
+      <a href="https://www.linkedin.com/in/vitor-nazareth/" target="_blank">
+        <img src="../assets/img/linkedin.svg" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/aioryu/" target="_blank">
+        <img src="../assets/img/github.svg" alt="Github" />
+      </a>
+      <a href="https://www.instagram.com/vitorzath/" target="_blank">
+        <img src="../assets/img/instagram.svg" alt="Instagram" />
+      </a>
+    </section>
+    <h3>Feito com ❤️ por Vitor Soares Nazareth - 2025</h3>
+  </footer>
 
-				<!-- Seção do Google Maps -->
-				<article>
-					<address>
-						<p>Av. Professor Francisco Morato, 4229 - Vila Sonia,</p>
-						<p>São Paulo - SP, 05520-100</p>
-					</address>
-
-					<iframe
-						src="https://www.google.com/maps?q=Av.+Professor+Francisco+Morato,+4229+-+Vila+S%C3%B4nia,+S%C3%A3o+Paulo+-+SP&hl=pt-BR&z=16&output=embed"
-						width="600"
-						height="450"
-						style="border: 0"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</article>
-			</main>
-		</main>
-
-		<!-- Rodapé da Página (footer) -->
-		<footer>
-			<section>
-				<a href="https://www.linkedin.com/in/vitor-nazareth/" target="_blank">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-				<a href="https://github.com/aioryu/" target="_blank">
-					<img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="https://www.instagram.com/vitorzath/" target="_blank">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
-
-			<h3>Feito com ❤️ por Vitor Soares Nazareth - 2025</h3>
-		</footer>
-	</body>
+  <!-- Script separado -->
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>
