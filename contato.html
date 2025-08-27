@@ -6,27 +6,22 @@
   <meta name="description" content="Projeto Portfólio" />
   <meta name="author" content="Generation Brasil" />
   <meta name="keywords" content="HTML, CSS, JavaScript" />
-  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="stylesheet" href="contato.css"> <!-- estilos só do contato -->
-  
-
-  <title>Contato</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="contato.css"> <title>Contato</title>
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>Generation Brasil</h1>
     <nav>
       <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
-  <main>
+  <main class="main_contato">
     <form id="formulario">
       <label for="name"> Nome: </label>
       <input id="name" type="text" name="name" placeholder="Digite seu nome" />
@@ -46,9 +41,8 @@
       <button type="submit">Enviar</button>
     </form>
 
-    <!-- Google Maps -->
-    <article>
-      <address>
+    <article class="article_mapa">
+      <address class="mapa_endereco">
         <p>Av. Professor Francisco Morato, 4229 - Vila Sonia,</p>
         <p>São Paulo - SP, 05520-100</p>
       </address>
@@ -64,23 +58,21 @@
     </article>
   </main>
 
-  <!-- Rodapé -->
   <footer>
     <section>
       <a href="https://www.linkedin.com/in/vitor-nazareth/" target="_blank">
-        <img src="../assets/img/linkedin.svg" alt="LinkedIn" />
+        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
       </a>
       <a href="https://github.com/aioryu/" target="_blank">
-        <img src="../assets/img/github.svg" alt="Github" />
+        <img src="assets/img/github.svg" alt="Github" />
       </a>
       <a href="https://www.instagram.com/vitorzath/" target="_blank">
-        <img src="../assets/img/instagram.svg" alt="Instagram" />
+        <img src="assets/img/instagram.svg" alt="Instagram" />
       </a>
     </section>
     <h3>Feito com ❤️ por Vitor Soares Nazareth - 2025</h3>
   </footer>
 
-  <!-- Script separado -->
-  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

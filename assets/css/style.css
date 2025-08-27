@@ -162,6 +162,16 @@ footer img:hover {
     padding-bottom: 178px;
 }
 
+/* Adicionado para responsividade em telas menores */
+@media (max-width: 768px) {
+    .main_contato {
+        grid-template-columns: 1fr; /* Altera para uma única coluna */
+        gap: 2rem; /* Reduz o espaçamento */
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -169,7 +179,7 @@ form {
     padding: 1.5rem;
     border-radius: 0.75rem;
     background: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 form input, textarea {
